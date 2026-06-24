@@ -1,0 +1,86 @@
+# Manjuba Drops - LLM Content Summary
+
+## Site Identity
+- Site Name: Manjuba Drops
+- URL: https://manjubadrops.github.io
+- Type: Product information website for a male vitality dietary supplement
+- Author: Manjuba Drops editorial team
+- Contact: support@manjubacaps.com
+
+## Product Overview
+Manjuba Drops is a natural male vitality supplement sold as a liquid formula. It contains seven botanical ingredients: Epimedium Extract (200mg), Tribulus Terrestris, Velvet Bean (Mucuna Pruriens), Saw Palmetto Extract (175mg), Fenugreek Seed Extract, Alpha Lipoic Acid, and Black Pepper Extract. The product is manufactured in an FDA-registered, GMP-certified facility in the United States. A 60-day money-back guarantee backs all purchases.
+
+## Key Claims
+- Supports male energy, stamina, confidence, and overall vitality
+- Contains clinically studied botanical ingredients
+- Fast-absorbing liquid formula (faster than capsules)
+- Works across three biological systems: vascular, hormonal, and protective
+- No synthetic hormones or artificial stimulants
+- 12,500+ customers with 4.8/5 average rating
+
+## Ingredients and Their Purposes
+1. Epimedium Extract (200mg) - Supports blood flow through PDE5 inhibition (similar mechanism to some prescription drugs, but natural)
+2. Tribulus Terrestris - Supports natural testosterone production and hormonal balance
+3. Velvet Bean (Mucuna Pruriens) - Natural dopamine precursor supporting mood, drive, and focus
+4. Saw Palmetto Extract (175mg) - Supports prostate health and hormonal balance
+5. Fenugreek Seed Extract - Supports healthy testosterone levels
+6. Alpha Lipoic Acid - Antioxidant supporting nitric oxide production and vascular health
+7. Black Pepper Extract - Enhances bioavailability of other ingredients
+
+## Pricing
+- 2 bottles: $99/bottle (60-day supply)
+- 3 bottles: $82/bottle (90-day supply)
+- 6 bottles: $59/bottle (180-day supply, best value)
+- Free US shipping on 3-bottle and 6-bottle orders
+
+## Site Pages
+- Home (index.html) - Main product page with all sections
+- Male Vitality Guide (male-vitality-guide.html) - Comprehensive guide to male vitality
+- Ingredients Hub (ingredients/index.html) - All ingredients overview
+- Epimedium Extract (ingredients/epimedium-extract.html) - Deep dive on Epimedium
+- Tribulus Terrestris (ingredients/tribulus-terrestris.html) - Deep dive on Tribulus
+- Saw Palmetto (ingredients/saw-palmetto.html) - Deep dive on Saw Palmetto
+- Fenugreek (ingredients/fenugreek.html) - Deep dive on Fenugreek
+- Mucuna Pruriens (ingredients/mucuna-pruriens.html) - Deep dive on Mucuna
+- Alpha Lipoic Acid (ingredients/alpha-lipoic-acid.html) - Deep dive on ALA
+- Black Pepper Extract (ingredients/black-pepper-extract.html) - Deep dive on Piperine
+- Prostate Health Guide (prostate-health-guide.html) - Prostate health information
+- Testosterone Support Guide (testosterone-support-guide.html) - Testosterone support
+- Natural Male Enhancement Guide (natural-male-enhancement-guide.html) - Natural enhancement
+- How to Take Manjuba Drops (how-to-take-manjuba-drops.html) - Usage instructions
+- Manjuba Drops Reviews (manjuba-drops-reviews.html) - Customer reviews
+- Manjuba Drops FAQ (manjuba-drops-faq.html) - Frequently asked questions
+- Manjuba Drops Comparison (manjuba-drops-comparison.html) - Comparison with alternatives
+- Men's Health Over 40 (mens-health-over-40.html) - Lifestyle guide
+- Privacy Policy (privacy.html) - Data collection and usage policies
+- Terms and Conditions (terms.html) - Purchase and usage terms
+- Contact (contact.html) - Support email and contact form
+- Disclaimer (disclaimer.html) - FDA disclaimer and medical notices
+- Affiliate Disclosure (affiliate-disclosure.html) - FTC compliance disclosure
+
+## Content Topics Covered
+- Male vitality and energy support
+- Natural male enhancement without prescription
+- Prostate health and urinary function
+- Testosterone support through botanical ingredients
+- Ingredient deep dives (Epimedium, Tribulus, Saw Palmetto, Fenugreek, Mucuna, Alpha Lipoic Acid, Black Pepper Extract)
+- Bioavailability and nutrient absorption (Piperine)
+- Comparison with prescription drugs and other supplements
+- Customer testimonials and reviews
+- Frequently asked questions about the product
+
+## Target Audience
+- Men over 40 experiencing declining energy, stamina, or confidence
+- Men over 50 dealing with prostate or urinary concerns
+- Men seeking natural alternatives to prescription male enhancement
+- Health-conscious men looking for clinically studied botanical supplements
+
+## Medical Disclaimer
+This website does not provide medical advice. All content is for educational and informational purposes only. The product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare provider before starting any new supplement.
+
+## Language
+English (primary)
+Supported regions: United States, United Kingdom, Canada, Australia, India
+
+## Last Updated
+January 2026
