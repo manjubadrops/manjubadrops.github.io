@@ -1,0 +1,231 @@
+(function () {
+    "use strict";
+    document.addEventListener("DOMContentLoaded", init);
+    function init() {
+        initNavigation();
+        initThemeToggle();
+        initScrollAnimations();
+        initFAQ();
+        initStickyCTA();
+        initSmoothScroll();
+        initCounterAnimations();
+        initMobileMenu();
+    }
+    function initNavigation() {
+        const nav = document.querySelector(".nav");
+        if (!nav) return;
+        let lastScroll = 0;
+        window.addEventListener(
+            "scroll",
+            () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > 50) {
+                    nav.classList.add("scrolled");
+                } else {
+                    nav.classList.remove("scrolled");
+                }
+                lastScroll = currentScroll;
+            },
+            { passive: !0 }
+        );
+    }
+    function initThemeToggle() {
+        const toggle = document.querySelector(".theme-toggle");
+        if (!toggle) return;
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+        updateThemeIcon(savedTheme);
+        toggle.addEventListener("click", () => {
+            const current = document.documentElement.getAttribute("data-theme");
+            const next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+            updateThemeIcon(next);
+        });
+    }
+    function updateThemeIcon(theme) {
+        const toggle = document.querySelector(".theme-toggle");
+        if (!toggle) return;
+        toggle.innerHTML = theme === "dark" ? "&#9788;" : "&#9790;";
+        toggle.setAttribute("aria-label", `Switch to ${theme === "dark" ? "light" : "dark"} mode`);
+    }
+    function initMobileMenu() {
+        const toggle = document.querySelector(".nav__toggle");
+        const links = document.querySelector(".nav__links");
+        if (!toggle || !links) return;
+        toggle.addEventListener("click", () => {
+            links.classList.toggle("active");
+            const isOpen = links.classList.contains("active");
+            toggle.setAttribute("aria-expanded", isOpen);
+            toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        });
+        links.querySelectorAll(".nav__link").forEach((link) => {
+            link.addEventListener("click", () => {
+                links.classList.remove("active");
+                toggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+    function initScrollAnimations() {
+        if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+            document
+                .querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-cards > *")
+                .forEach((el) => {
+                    el.style.opacity = "1";
+                    el.style.transform = "none";
+                });
+            return;
+        }
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray(".reveal").forEach((el) => {
+            gsap.fromTo(
+                el,
+                { y: 30 },
+                {
+                    scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none none" },
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                }
+            );
+        });
+        gsap.utils.toArray(".reveal-left").forEach((el) => {
+            gsap.fromTo(
+                el,
+                { x: -30 },
+                {
+                    scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none none" },
+                    x: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                }
+            );
+        });
+        gsap.utils.toArray(".reveal-right").forEach((el) => {
+            gsap.fromTo(
+                el,
+                { x: 30 },
+                {
+                    scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none none" },
+                    x: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                }
+            );
+        });
+        gsap.utils.toArray(".reveal-scale").forEach((el) => {
+            gsap.fromTo(
+                el,
+                { scale: 0.95 },
+                {
+                    scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none none" },
+                    scale: 1,
+                    duration: 0.8,
+                    ease: "power3.out",
+                }
+            );
+        });
+        gsap.utils.toArray(".stagger-cards").forEach((container) => {
+            const cards = container.children;
+            gsap.fromTo(
+                cards,
+                { y: 30 },
+                {
+                    scrollTrigger: { trigger: container, start: "top 80%", toggleActions: "play none none none" },
+                    y: 0,
+                    stagger: 0.1,
+                    duration: 0.6,
+                    ease: "power3.out",
+                }
+            );
+        });
+        gsap.utils.toArray(".parallax").forEach((el) => {
+            gsap.to(el, {
+                scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: 1 },
+                y: -50,
+                ease: "none",
+            });
+        });
+    }
+    function initFAQ() {
+        const faqItems = document.querySelectorAll(".faq-item");
+        faqItems.forEach((item) => {
+            const question = item.querySelector(".faq-item__question");
+            if (!question) return;
+            question.addEventListener("click", () => {
+                const isActive = item.classList.contains("active");
+                faqItems.forEach((i) => i.classList.remove("active"));
+                if (!isActive) {
+                    item.classList.add("active");
+                }
+            });
+        });
+    }
+    function initStickyCTA() {
+        const stickyCta = document.querySelector(".sticky-cta");
+        if (!stickyCta) return;
+        const hero = document.querySelector(".hero");
+        const footer = document.querySelector(".footer");
+        function checkSticky() {
+            const scrollY = window.pageYOffset;
+            const heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 600;
+            const footerTop = footer ? footer.offsetTop : document.body.scrollHeight;
+            if (scrollY > heroBottom && scrollY < footerTop - window.innerHeight) {
+                stickyCta.classList.add("visible");
+            } else {
+                stickyCta.classList.remove("visible");
+            }
+        }
+        window.addEventListener("scroll", checkSticky, { passive: !0 });
+        checkSticky();
+    }
+    function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                const targetId = this.getAttribute("href");
+                if (targetId === "#") return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = document.querySelector(".nav")?.offsetHeight || 72;
+                    const targetPos = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    window.scrollTo({ top: targetPos, behavior: "smooth" });
+                }
+            });
+        });
+    }
+    function initCounterAnimations() {
+        const counters = document.querySelectorAll("[data-count]");
+        if (!counters.length) return;
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseFloat(el.getAttribute("data-count"));
+                        const suffix = el.getAttribute("data-suffix") || "";
+                        const prefix = el.getAttribute("data-prefix") || "";
+                        const duration = 2000;
+                        const start = 0;
+                        const startTime = performance.now();
+                        function animate(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const raw = start + (target - start) * eased;
+                            const current = Number.isInteger(target) ? Math.floor(raw) : parseFloat(raw.toFixed(1));
+                            el.textContent = prefix + current.toLocaleString() + suffix;
+                            if (progress < 1) {
+                                requestAnimationFrame(animate);
+                            }
+                        }
+                        requestAnimationFrame(animate);
+                        observer.unobserve(el);
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+        counters.forEach((counter) => observer.observe(counter));
+    }
+})();

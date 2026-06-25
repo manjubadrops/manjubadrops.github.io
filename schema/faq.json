@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manjuba Drops is a natural male vitality supplement designed to support energy, confidence, stamina, and overall male wellness. It contains 7 clinically studied botanical ingredients delivered in a fast-absorbing liquid formula. Made in an FDA-registered, GMP-certified facility in the USA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to see results from Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Results vary by individual. Most users report the best results when taking Manjuba Drops consistently for at least 3 months. The formula is designed to work in stages, with initial improvements in energy and mood, followed by enhanced performance and vitality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the main ingredients in Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manjuba Drops contains Epimedium Extract (200mg), Tribulus Terrestris, Velvet Bean (Mucuna Pruriens), Saw Palmetto Extract (175mg), Fenugreek Seed Extract, Alpha Lipoic Acid, and Black Pepper Extract. These ingredients work across vascular, hormonal, and protective systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Manjuba Drops safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manjuba Drops is manufactured in an FDA-registered, GMP-certified facility in the USA. It contains natural ingredients with no synthetic hormones or artificial stimulants. However, consult your healthcare provider before starting any new supplement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Manjuba Drops come with a guarantee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, every order is protected by a 60-day 100% money-back guarantee. If you are not satisfied with the results, contact support within 60 days for a full refund."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I take Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Take Manjuba Drops daily as directed on the product label. For best results, use consistently as part of your daily routine. Many users prefer taking it in the morning or evening."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Manjuba Drops legit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manjuba Drops is produced in a GMP-certified, FDA-registered facility in the USA. It uses clinically studied ingredients and comes with a 60-day money-back guarantee, making it a legitimate supplement option for male vitality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What benefits can I expect from Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stage 1: Improved energy levels, mood, and sleep quality. Stage 2: Enhanced blood flow, increased libido, and stronger erections. Stage 3: Long-term support for sexual performance, stamina, and overall male vitality. Benefits strengthen with consistent use for at least three months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manjuba Drops can be purchased through the official website. Order directly to get the best prices, free shipping on select packages, and the 60-day money-back guarantee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the price of Manjuba Drops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manjuba Drops is available in three packages: 2 bottles at $99/bottle, 3 bottles at $82/bottle, or the best-value 6 bottles at $59/bottle. Free US shipping is included on 3-bottle and 6-bottle orders."
+      }
+    }
+  ]
+}
